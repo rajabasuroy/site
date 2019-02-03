@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Material Design Bootstrap</title>
+<!--  FontAwesome -->
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+	integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+	crossorigin="anonymous">
+
+<!-- Font Awesome -->
+
+<!-- Bootstrap core CSS -->
+<link
+	href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+	rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link
+	href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.6.1/css/mdb.min.css"
+	rel="stylesheet">
+</head>
+
+<body class="container">
+<div class="card">
+
+    <h3 class="card-header info-color white-text py-4">
+        <strong>Create New Tutorial</strong>
+    </h3>
+
+    <div class="card-body px-lg-5 pt-0">
+  <!-- Start your project here-->
+ <form class="p-5">
+ 	<h5><strong>General Information:</strong></h5>
+	<hr>
+    <label for="tutorial_name">Tutorial Name:</label>
+    <input type="text" id="tutorial_name" class="form-control" placeholder="Enter the name of tutorial here">
+    <small class="form-text text-muted text-info mb-4">
+  	Tutorial name can be of maximum 128 characters long including spaces.
+	</small>
+	<div class="form-row">
+	<div class="form-group col-md-6">
+    <label for="subject">Subject:</label>
+    <select class="browser-default custom-select mb-4" id="subject">
+        <option value="" disabled="" selected="">Choose your option</option>
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+    </select>
+    </div>
+	<div class="form-group col-md-6">
+    <label for="topic">Topic:</label>
+    <select class="browser-default custom-select mb-4" id="topic">
+        <option value="" disabled="" selected="">Choose your option</option>
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+    </select>
+    </div>
+	</div>
+	
+		<div class="form-row">
+	<div class="form-group col-md-6">
+    <label for="publish">Tutorial Visibility:</label>
+    <select class="browser-default custom-select" id="subject">
+        <option value="1" selected="selected" >Hide</option>
+        <option value="2">Show</option>
+    </select>
+    <small class="form-text text-muted text-info mb-4">
+	  Controls whether to publish the tutorial to public. 
+	</small>
+    </div>
+	<div class="form-group col-md-6">
+    <label for="topic">Tutorial Level:</label>
+    <select class="browser-default custom-select mb-4" id="topic">
+        <option value="" disabled="" selected="">Choose your option</option>
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+    </select>
+    </div>
+	</div>
+	<h5><strong>Description:</strong></h5>
+	<hr>
+    <label for="summary">Tutorial Summary:</label>
+    <textarea id="summary" class="form-control mb-4" placeholder=" "></textarea>
+	
+	<label>Select Tutorial Image:</label>	
+  	<div class="custom-file mb-4">
+        <input type="file" class="custom-file-input" id="fileInput" aria-describedby="fileInput">
+        <label class="custom-file-label" for="fileInput">Select File</label>
+    </div>
+	<hr>
+    <button class="btn btn-info my-4" type="submit">Create Tutorial</button>
+        
+</form>
+</div>
+</div>
+
+<div class="card">
+
+    <h3 class="card-header info-color white-text py-4">
+        <strong>Manage Tutorial</strong>
+    </h3>
+
+    <div class="card-body px-lg-5 pt-0">
+  <!-- Start your project here-->
+ <form class="p-5">
+ 	<h5><strong>General Information:</strong></h5>
+	<hr>
+	<label for="tutorial_id" class="disabled">Tutorial ID:</label>
+	<input type="text" id="tutorial_id" class="form-control mb-4" disabled placeholder="11111111">
+
+    <label for="tutorial_name">Tutorial Name:</label>
+    <input type="text" id="tutorial_name" class="form-control" placeholder="Enter the name of tutorial here">
+    <small class="form-text text-muted text-info mb-4">
+  	Tutorial name can be of maximum 128 characters long including spaces.
+	</small>
+	<div class="form-row">
+	<div class="form-group col-md-6">
+    <label for="subject">Subject:</label>
+    <select class="browser-default custom-select mb-4" id="subject">
+        <option value="" disabled="" selected="">Choose your option</option>
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+    </select>
+    </div>
+	<div class="form-group col-md-6">
+    <label for="topic">Topic:</label>
+    <select class="browser-default custom-select mb-4" id="topic">
+        <option value="" disabled="" selected="">Choose your option</option>
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+    </select>
+    </div>
+	</div>
+	
+		<div class="form-row">
+	<div class="form-group col-md-6">
+    <label for="publish">Tutorial Visibility:</label>
+    <select class="browser-default custom-select" id="subject">
+        <option value="1" selected="selected" >Hide</option>
+        <option value="2">Show</option>
+    </select>
+    <small class="form-text text-muted text-info mb-4">
+	  Controls whether to publish the tutorial to public. 
+	</small>
+    </div>
+	<div class="form-group col-md-6">
+    <label for="topic">Tutorial Level:</label>
+    <select class="browser-default custom-select mb-4" id="topic">
+        <option value="" disabled="" selected="">Choose your option</option>
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+    </select>
+    </div>
+	</div>
+	<h5><strong>Description:</strong></h5>
+	<hr>
+    <label for="summary">Tutorial Summary:</label>
+    <textarea id="summary" class="form-control mb-4" placeholder=" "></textarea>
+	<label>Tutorial Image:</label>
+	<div><img src="https://mdbootstrap.com/img/Others/documentation/img%20(75)-mini.jpg" alt="thumbnail" class="img-thumbnail mb-4"  style="width: 200px">
+	</div>
+	<label>Update Tutorial Image:</label>	
+  	<div class="custom-file mb-4">
+        <input type="file" class="custom-file-input" id="fileInput" aria-describedby="fileInput">
+        <label class="custom-file-label" for="fileInput">Select File</label>
+    </div>
+	<hr>
+    <button class="btn btn-info" type="submit">Update Tutorial</button>
+        
+</form>
+<div class="p-5">
+	<!--Test-->
+	<div class="card card-cascade narrower">
+  <!--Card image-->
+  <div class="view view-cascade gradient-card-header blue-gradient narrower py-2 mx-4 mb-3 d-flex justify-content-between align-items-center" style="top:-20px;">
+	<h4 class="white-text mx-3">Tutorial Sections</h4>
+    <div>
+      <button type="button" class="btn btn-outline-white btn-rounded btn-sm px-2" data-toggle="modal" data-target="#AddForm">
+        <i class="fas fa-plus mt-0"></i>
+      </button>
+      <button type="button" class="btn btn-outline-white btn-rounded btn-sm px-2">
+        <i class="fas fa-pencil-alt mt-0"></i>
+      </button>
+      <button type="button" class="btn btn-outline-white btn-rounded btn-sm px-2">
+        <i class="far fa-trash-alt mt-0"></i>
+      </button>
+    </div>
+
+  </div>
+  
+  <!--/Card image-->
+
+  <div class="px-4">
+
+    <div class="table-wrapper">
+      <!--Table-->
+      <table class="table table-hover mb-0">
+
+        <!--Table head-->
+        <thead>
+          <tr>
+            <th>
+              <input class="form-check-input" type="checkbox" id="checkbox">
+              <label class="form-check-label" for="checkbox" class="mr-2 label-table"></label>
+            </th>
+            <th class="th-lg">
+              <a href="">Section Title
+                <i class="fas fa-sort ml-1"></i>
+              </a>
+            </th>
+            <th class="th-lg">
+              <a href="">Topic
+                <i class="fas fa-sort ml-1"></i>
+              </a>
+            </th>
+            <th class="th-lg">
+              <a href="">Sub-topic
+                <i class="fas fa-sort ml-1"></i>
+              </a>
+            </th>
+            <th class="th-lg">
+              <a href="">Section Type
+                <i class="fas fa-sort ml-1"></i>
+              </a>
+            </th>
+            <th class="th-lg">
+              <a href="">Layout Order
+                <i class="fas fa-sort ml-1"></i>
+              </a>
+            </th>
+            <th class="th-lg">
+              <a href="">Active
+                <i class="fas fa-sort ml-1"></i>
+              </a>
+            </th>
+          </tr>
+        </thead>
+        <!--Table head-->
+
+        <!--Table body-->
+        <tbody>
+          <tr>
+            <th scope="row">
+              <input class="form-check-input" type="checkbox" id="checkbox1">
+              <label class="form-check-label" for="checkbox1" class="label-table"></label>
+            </th>
+            <td>Mark this ia sample title</td>
+            <td>Fraction</td>
+            <td>Introduction to fractions</td>
+            <td>Video</td>
+            <td>1</td>
+            <td>Yes</td>
+          </tr>
+         <tr>
+            <th scope="row">
+              <input class="form-check-input" type="checkbox" id="checkbox1">
+              <label class="form-check-label" for="checkbox1" class="label-table"></label>
+            </th>
+            <td>Mark this ia sample title</td>
+            <td>Fraction</td>
+            <td>Introduction to fractions</td>
+            <td>Video</td>
+            <td>1</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <input class="form-check-input" type="checkbox" id="checkbox1">
+              <label class="form-check-label" for="checkbox1" class="label-table"></label>
+            </th>
+            <td>Mark this ia sample title</td>
+            <td>Fraction</td>
+            <td>Introduction to fractions</td>
+            <td>Video</td>
+            <td>1</td>
+            <td>Yes</td>
+          </tr>
+        </tbody>
+        <!--Table body-->
+      </table>
+      <!--Table-->
+    </div>
+
+  </div>
+
+</div>
+	 
+</div>
+	</div>	
+
+</div>
+
+
+<div class="modal fade" id="AddForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+
+  <!-- Change class .modal-sm to change the size of the modal -->
+  <div class="modal-dialog modal-fluid" role="document">
+
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title w-100" id="myModalLabel">Modal title</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary btn-sm">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Central Modal Small -->
+
+
+  <!-- /Start your project here-->
+
+  <!-- SCRIPTS -->
+
+ <!-- JQuery -->
+	<script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Bootstrap tooltips -->
+	<script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+	<!-- Bootstrap core JavaScript -->
+	<script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	<!-- MDB core JavaScript -->
+	<script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.6.1/js/mdb.min.js"></script>
+		<script>
+            $('#fileInput').on('change',function(){
+                //get the file name
+                var fileName = $(this).val();
+                //replace the "Choose a file" label
+                $(this).next('.custom-file-label').html(fileName);
+            })
+        </script>
+
+</body>
+
+</html>
+
+
